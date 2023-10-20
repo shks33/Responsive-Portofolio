@@ -1,0 +1,346 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --background: rgb(21,21,21);
+    --green: rgb(78,225,160);
+    --grey: rgb(36,36,36);
+    --lightgray: rgb(217,217,217);
+}
+body{
+    height: 100vh;
+    margin: 2vw 10vw 2vw 10vw;
+    background-color: var(--background);
+    color: white;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+/* NavBar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.logos{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 3%;
+    width: 150px;
+    font-size: 30px;
+}
+.logos i{
+    cursor: pointer;
+}
+.logos i:hover{
+    color: var(--green);
+    transition: 0.4s;
+}
+/* NavBar end */
+
+/* Main Start */
+.main{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.main .content{
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.main .content h1{
+    font-size: 60px;
+    font-weight: 600;
+}
+.main .content .adam{
+    border-bottom: 4px solid var(--green);
+}
+.main .content p{
+    width: 400px;
+    color: var(--lightgray);
+}
+.main .content a{
+    cursor: pointer;
+    width: fit-content;
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--green);
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.main .content a:hover{
+color: var(--green);
+transition: 0.4s;
+}
+.main img{
+    height: 70vh;
+    position: absolute;
+    right: 11%;
+    bottom: 34%;
+    z-index: -1;
+    border-radius: 10px;
+}
+/* Main End */
+
+.underline{
+    margin-top: 200px;
+    border-top: 2px solid white;
+}
+
+/* Data under line */
+.datawrap{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.datawrap h1{
+    display: flex;
+    flex-direction: column;
+    font-size: 50px;
+}
+.line{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 70px;
+    margin-top: 50px;
+}
+.line span{
+    margin-top: 10px;
+    color: var(--lightgray);
+    font-size: 20px;
+}
+/* Data under line end */
+
+/* Start of Projects section */
+.projectwrap{
+    margin-top: 150px;
+}
+.projectwrap .head{
+    font-size: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.projectwrap .contact{
+    cursor: pointer;
+    font-size: 20px;
+    padding-bottom: 5px;
+    letter-spacing: 2px;
+    border-bottom: 2px solid var(--green);
+}
+.projectwrap span:hover{
+    color: var(--green);
+    transition: 0.4s;
+}
+.projectwrap .projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+}
+.projects{
+    display: flex;
+    justify-content: space-between;
+}
+.project{
+    margin-top: 70px;
+}
+.project img{
+    width: 33vw;
+}
+.project h1{
+    text-transform: uppercase;
+}
+.project span{
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--lightgray);
+}
+/* Projects end */
+
+/* footer start */
+.footerwrapper{
+    background-color: var(--grey);
+    position: absolute;
+    right: 0;
+    left: 0;
+    padding: 2vw 10vw 2vw 10vw;;
+    margin-top: 100px;
+}
+.dataandform{
+    display: flex;
+    justify-content: space-between;
+}
+.footerwrapper .footdata h1{
+    font-size: 80px;
+}
+.footerwrapper .footdata p{
+    font-weight: 500;
+    margin-top: 30px;
+    color: var(--lightgray);
+    width: 30vw;
+}
+.footerwrapper .footform form{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+.footerwrapper .footform form input{
+    background-color: var(--grey);
+    padding: 10px;
+    margin: 10px;
+    border: var(--grey);
+    border-bottom: 1px solid var(--lightgray);
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+}
+.footerwrapper .footform form .message{
+    padding-bottom: 100px;
+}
+.footerwrapper .footform form button{
+    font-size: 20px;
+    width: fit-content;
+    background-color: var(--grey);
+    border: none;
+    color: white;
+    border-bottom: 2px solid var(--green);
+    letter-spacing: 2px;
+    font-family: 'Space Grotesk' , 'sans-serif';
+    font-weight: 500;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-top: 30px;
+    padding-bottom: 5px;
+}
+.footerwrapper .footform form button:hover{
+    color: var(--green);
+    transition: 0.4s;
+}
+.footerwrapper .underline{
+    margin-top: 70px;
+}
+.personalfooter{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+@media(max-width: 900px){
+body{
+    margin: 0;
+
+}
+.navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    padding-top: 20px;
+    background-image: linear-gradient(var(--background), var(--background) ,var(--background), transparent);
+}
+.navbar .logos{
+margin-top: 10px;
+}
+.main{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+}
+.main img{
+    position: relative;
+    top: -50px;
+    width: 70vw;
+    height: 1%;
+    left: 1px;
+    object-fit: cover;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 250px !important;
+}
+.content .headline{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content .headline h1{
+    font-size: 40px;
+}
+.content p{
+    text-align: center;
+}
+.underline{
+    margin: 100px 10vw 50px 10vw ;
+}
+.datawrap{
+    display: flex;
+    flex-direction: column;
+}
+.line{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+.underline{
+    display: block !important;
+}
+.projectwrap .head{
+    font-size: 40px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.projects{
+    display: grid;
+    grid-template-columns: 1fr !important;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr !important;
+    text-align: left;
+}
+.project{
+width: 90vw;
+margin-top: 40px;
+}
+.project img{
+    width: 90vw;
+}
+.footerwrapper{
+width: 100vw;
+}
+.footerwrapper .dataandform{
+    display: flex;
+    flex-direction: column;
+}
+.footdata{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+}
+.footdata h1{
+    font-size: 60px !important;
+    margin-top: 20px;
+}
+.footdata p{
+    width: 90vw !important; 
+}
+.footform form{
+    width: 85vw !important;
+    margin-top: 20px;
+}
+.personalfooter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+}
